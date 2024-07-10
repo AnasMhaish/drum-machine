@@ -75,36 +75,44 @@ const DrumMachine: React.FC = () => {
   }, []);
 
   return (
-    <div id="drum-machine" >
-      <div id="display" className="card">{display}</div>
+    <div id="drum-machine">
+      <div id="display" className="card">
+        {display}
+      </div>
       <div className="center-container">
-        <button className="drum-pad" id="Q" onClick={handleDrumPadClick}>
-          <audio src="Q.mp3" className="clip" id="Q" ref={qAudio} /> Q
-        </button>
-        <button className="drum-pad" id="W" onClick={handleDrumPadClick}>
-          <audio src="W.mp3" className="clip" id="W" ref={wAudio} /> W
-        </button>
-        <button className="drum-pad" id="E" onClick={handleDrumPadClick}>
-          <audio src="E.mp3" className="clip" id="E" ref={eAudio} /> E
-        </button>
-        <button className="drum-pad" id="A" onClick={handleDrumPadClick}>
-          <audio src="A.mp3" className="clip" id="A" ref={aAudio} /> A
-        </button>
-        <button className="drum-pad" id="S" onClick={handleDrumPadClick}>
-          <audio src="S.mp3" className="clip" id="S" ref={sAudio} /> S
-        </button>
-        <button className="drum-pad" id="D" onClick={handleDrumPadClick}>
-          <audio src="D.mp3" className="clip" id="D" ref={dAudio} /> D
-        </button>
-        <button className="drum-pad" id="Z" onClick={handleDrumPadClick}>
-          <audio src="Z.mp3" className="clip" id="Z" ref={zAudio} /> Z
-        </button>
-        <button className="drum-pad" id="X" onClick={handleDrumPadClick}>
-          <audio src="X.mp3" className="clip" id="X" ref={xAudio} /> X
-        </button>
-        <button className="drum-pad" id="C" onClick={handleDrumPadClick}>
-          <audio src="C.mp3" className="clip" id="C" ref={cAudio} /> C
-        </button>
+        <div className="row">
+          <button className="drum-pad" id="Q" onClick={handleDrumPadClick}>
+            <audio src="Q.mp3" className="clip" id="Q" ref={qAudio} /> Q
+          </button>
+          <button className="drum-pad" id="W" onClick={handleDrumPadClick}>
+            <audio src="W.mp3" className="clip" id="W" ref={wAudio} /> W
+          </button>
+          <button className="drum-pad" id="E" onClick={handleDrumPadClick}>
+            <audio src="E.mp3" className="clip" id="E" ref={eAudio} /> E
+          </button>
+        </div>
+        <div className="row">
+          <button className="drum-pad" id="A" onClick={handleDrumPadClick}>
+            <audio src="A.mp3" className="clip" id="A" ref={aAudio} /> A
+          </button>
+          <button className="drum-pad" id="S" onClick={handleDrumPadClick}>
+            <audio src="S.mp3" className="clip" id="S" ref={sAudio} /> S
+          </button>
+          <button className="drum-pad" id="D" onClick={handleDrumPadClick}>
+            <audio src="D.mp3" className="clip" id="D" ref={dAudio} /> D
+          </button>
+        </div>
+        <div className="row">
+          <button className="drum-pad" id="Z" onClick={handleDrumPadClick}>
+            <audio src="Z.mp3" className="clip" id="Z" ref={zAudio} /> Z
+          </button>
+          <button className="drum-pad" id="X" onClick={handleDrumPadClick}>
+            <audio src="X.mp3" className="clip" id="X" ref={xAudio} /> X
+          </button>
+          <button className="drum-pad" id="C" onClick={handleDrumPadClick}>
+            <audio src="C.mp3" className="clip" id="C" ref={cAudio} /> C
+          </button>
+        </div>
       </div>
     </div>
   );
